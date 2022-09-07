@@ -17,7 +17,7 @@ class GymsController < ApplicationController
    def destroy
       gym = Gym.find(params[:id])
       gym.destroy
-      render json: { message: ""}, status: 
+      render json: {}, status: :no_content
    end
 
 end
